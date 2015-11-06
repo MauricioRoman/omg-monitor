@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # This is a test for pushing data in dynamically
 

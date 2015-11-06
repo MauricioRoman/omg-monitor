@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # another sample script to pump in data from the current time
 # Usage: ./currente_time_data localhost 153

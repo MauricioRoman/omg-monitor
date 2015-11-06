@@ -33,10 +33,4 @@ export MONITOR_ARGS=$*
 export SERVER_TOKEN=$SERVER_TOKEN
 
 # Start monitors running NuPIC
-if [ -z "$DYNAMIC" ]; then
-    # If not dynamic
-    exec supervisord -c /home/docker/omg-monitor/config/supervisor.conf
-else
-    # If dynamic
-    exec supervisord -c /home/docker/omg-monitor/config/supervisor_dynamic.conf
-fi
+exec supervisord -c /home/docker/omg-monitor/config/supervisor_dynamic.conf

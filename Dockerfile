@@ -1,4 +1,4 @@
-FROM numenta/nupic
+FROM mauricioroman/nupic
 
 MAINTAINER Allan Costa <allan@cloudwalk.io>
 
@@ -16,6 +16,7 @@ RUN \
 #RUN
 
 # Install Supervisor
+RUN apt-get update
 RUN apt-get install -y supervisor
 
 # Add redis and go to path

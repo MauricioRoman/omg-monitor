@@ -60,7 +60,8 @@ class Monitor(object):
         self.anomaly_threshold = config['anomaly_threshold']
         self.likelihood_threshold = config['likelihood_threshold']
         self.domain = config['domain']
-        self.protocol = config['protocol']
+        #self.protocol = config['protocol']
+        self.protocol = 'http'
         self.alert = False # Toogle when we get above threshold
 
         # Setup logging
